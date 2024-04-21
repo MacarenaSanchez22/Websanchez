@@ -1,9 +1,28 @@
-style{
-  border-style: solid;
+nav{
+  display: flex;
+  background-color: rgb(223, 188, 252);
+  align-items: center;
+  padding-right: 10px;
+}
+nav a{
+  text-align: right;
+  padding-right: 10px;
 }
 
+ul{
+display: inline-block;
+padding: 0px 20px;
+}
 
-div{
+style{
+  solid {border-style: solid;}
+}
+.ms img{
+  width: 120px;
+  height: 100px;
+}
+
+h1{
     color: rgb(158, 54, 255);
     text-align: center;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -18,7 +37,7 @@ p{
         border: 3px solid rgb(255, 146, 192) ;
 }
     
- img{
+img{
         width: 350px;height: 500px;
       } 
 body{
@@ -26,15 +45,7 @@ body{
 background-attachment: fixed; 
 background-size: 100% 100%;
 color: rgb(253, 41, 112);
-font-family: Georgia, 'Times New Roman', Times, serif;
-font-size: larger;
-background-color: rgb(223, 188, 252);
-color:rgb(253, 41, 112);
-padding: 15px 25px;
 text-align: center;
-text-decoration: none;
-display: inline-block;
-margin-left: 600px;
 }
 
  form{
@@ -49,7 +60,3 @@ a{
 h2{
   color: rgb(158, 54, 255);
 }
-h1{
-  text-align: center;
-}
-
