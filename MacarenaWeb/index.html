@@ -3,34 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>alert ("PÁGINA PRINCIPAL")</script>
 </head>
 <body class=" main">
-    <nav>
-    <label for="img"class="ms">
-    <a href=""><img src="logo ms.png" alt="logo"</a>
-    </label>
+  <nav>
+  <label for="img"class="ms">
+  <a href=""><img src="logo ms.png" alt="logo"</a>
+  </label>
 <div class ="navbar">
-    <ul style="text-align: left;">
-        <a href="#">INICIO</a>
-        <a href=".\sobre_mi\index.html">SOBRE MI</a>
-        <a href=".\trabajos\index.html">TRABAJOS</a>    
-        <a href=".\contacto\index.html">CONTACTO</a>
-    </ul>
-</div></nav> 
+  <ul style="text-align: left;">
+      <a href="#">INICIO</a>
+      <a href=".\sobre_mi\index.html">SOBRE MI</a>
+      <a href=".\trabajos\index.html">TRABAJOS</a>    
+      <a href=".\contacto\index.html">CONTACTO</a>
+  </ul>
+</div></nav>
     <body class="main">
-        <h1>HOLA!!</h1>
+        <h1>PAGINA PRINCIPAL</h1>
         <p>Bienvenidos</p>
         <p>Esta es mi página</p>
         <img src="https://i.pinimg.com/564x/95/90/50/9590504c6e58a8899bd554e4018b33bd.jpg" alt="perrito">
         <h2>Introduzca su:</h2>
-        <form action="/action_page.php">
-            <label for="fname"><b>Nombre:</b></label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname"><b>Apellido:</b></label><br>
-            <input type="text" id="lname" name="lname"><br><br>
-            <input type="submit" value="Submit">
-        </form>
+        <input type="text" id="nombre" placeholder="Nombre">
+        <input type="text" id="apellido" placeholder="Apellido">
+        <button onclick="validarFormulario()">Enviar</button>
+        <script>
+          function validarFormulario() {
+            const nombre = document.getElementById('nombre').value;
+            const correo = document.getElementById('apellido').value;
+        
+            if (nombre.trim() === '') {
+              document.getElementById('nombre').style.borderColor = 'red';
+            } else {
+              document.getElementById('nombre').style.borderColor = 'initial';
+            }
+            const correoValido = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
+            if (!correoValido.test(correo)) {
+              document.getElementById('apellido').style.borderColor = 'red';
+            } else {
+              document.getElementById('apellido').style.borderColor = 'initial';
+            }
+          }
+        </script>
 </body>
 </html>

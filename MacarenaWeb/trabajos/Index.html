@@ -4,6 +4,9 @@
     <link rel ="stylesheet" type="text/css" href="../css/style.css">
 <meta charset="UTF-8">
 <title>Trabajos</title>
+<script> 
+    alert ("Página: TRABAJOS")
+    </script>
 </head> 
 <body class ="body_trabjos"> 
     <nav>
@@ -20,6 +23,24 @@
     </div></nav> 
 
     <p>Página de trabajos</p>
-    <center><img src="collage.jpeg"</center>
+    <button class="button" style="vertical-align:middle"><span>Completar</span></button>
+    <form>
+        <label for="sexo"><b>Sexo:</b> </label>
+        <input type="radio"> Hombre <input type="radio"> Mujer <br><br>
+        <label for="email">Email:</label>
+        <input type="email"><br><br>
+        <label for="Localidad">Localidad:</label>
+        <select name="pobla" id="pobla">
+            <option value="value">CABA</option>
+            <option value="value">Bs. As. G.B.A Norte</option>
+            <option value="value">Bs. As. G.B.A Oeste</option>
+            <option value="value">Bs. As. G.B.A Sur</option>
+        </select><br><br>
+        <label for="descripcion">Observación:</label>
+        <textarea rows="3" cols="30"></textarea><br><br>
+        <input type="checkbox">Deseo recibir información sobre novedades<br><br>
+        <input type="submit">
+    </form>
+    <div id="cuadrado"></div>
 </body>
 </html>

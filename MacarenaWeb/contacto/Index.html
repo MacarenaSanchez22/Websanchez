@@ -4,6 +4,9 @@
     <link rel ="stylesheet" type="text/css" href="../css/style.css">
 <meta charset="UTF-8">
 <title>Contacto</title>
+<script> 
+    alert ("Página: CONTACTO")
+    </script>
 </head> 
 <body class=" main">
     <nav>
@@ -18,12 +21,29 @@
         <a href="#">CONTACTO</a>
     </ul>
 </div></nav> 
+    <p>Página de contacto </p>
+    <h1>Introduzca su:</h1>
+    <form>
+        <label for="fname"><b>Nombre:</b></label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname"><b>Apellido:</b></label>
+        <input type="text" id="lname" name="lname"><br><br>
+    </form> 
+<input type="email" id="correo" placeholder="Correo electrónico">
+<button onclick="validarFormulario()">Enviar</button>
 
-    <p >Página de contacto </p>
-    <li>Número de télefono</li>
-    <li>Mail</li>
-    <li>Redes sociales</li>
-    
-<center><img src="vaca.jpeg" alt="..."></center>
+<script>
+  function validarFormulario() {
+    const correo = document.getElementById('correo').value;
+    const correoValido = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
+    if (!correoValido.test(correo)) {
+      document.getElementById('correo').style.borderColor = 'red';
+    } else {
+      document.getElementById('correo').style.borderColor = 'initial';
+    }
+  }
+</script>
+<br><h3 id="demo" style="display:none">Gracias por enviar su información, pronto nos estaremos comunicando...</h3>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'">Listo</button>
 </body>
 </html>
