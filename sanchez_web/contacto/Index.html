@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <link rel ="stylesheet" type="text/css" href="../css/style.css">
+<meta charset="UTF-8">
+<title>Contacto</title>
+<script> 
+    alert ("Página: CONTACTO")
+</script>
+<script defer src="../js/index.js"></script>
+<script src="https://kit.fontawesome.com/31dbc23fd4.js" crossorigin="anonymous"></script>
+</head> 
+<body>
+  <header class="header">
+  <nav class="nav">
+    <button class="nav-toggle" aria-label="Abrir menú">
+      <i class="fa-solid fa-bars"></i>
+</button>
+  <ul class="nav-menu">
+  <li><img src="../imagenes/logo.png" alt="logo" class="logo nav-link"></li>
+  <li class="nav-menu-item"><a href="..\index.html" class="nav-menu-link nav-link">INICIO</a></li>
+  <li class="nav-menu-item"><a href="..\sobre_mi\index.html" class="nav-menu-link nav-link">SOBRE MI</a></li>
+  <li class="nav-menu-item"><a href="..\trabajos\index.html" class="nav-menu-link nav-link">TRABAJOS</a></li>
+  <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link nav-menu-link_active"></a>CONTACTO</li>
+</ul>
+</nav>
+</header>
+<br><br><br><br>
+<p>Página de contacto </p>
+<h1>Introduzca su:</h1>
+<form>
+        <label for="fname"><b>Nombre:</b></label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname"><b>Apellido:</b></label>
+        <input type="text" id="lname" name="lname"><br><br>
+</form> 
+<input type="email" id="correo" placeholder="Correo electrónico">
+<button onclick="validarFormulario()">Enviar</button>
+<br><h3 id="demo" style="display:none">Gracias por enviar su información, pronto nos estaremos comunicando...</h3>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'">Listo</button>
+<br>
+<br>
+<img src="../imagenes/cielo.jpg" alt="">
+</body>
+</html>
